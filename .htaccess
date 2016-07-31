@@ -1,0 +1,9 @@
+
+
+<ifModule mod_rewrite.c>
+#-------------------------------------------------------------------------
+RewriteEngine on
+RewriteCond $1 !^(index.php|css|js|images|assets)
+RewriteRule ^(.*)$ /blog.com/index.php/$1 [L]
+#-------------------------------------------------------------------------
+</ifModule>
